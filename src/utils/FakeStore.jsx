@@ -61,10 +61,10 @@ const FakeStore = () => {
   }, []);
 
   return (
-    <div className="relative h-screen overflow-y-hidden">
-      <nav className="bg-cyan-500 p-4 w-full rounded-full">
+    <div className="w-">
+      <nav className="bg-cyan-500 p-4 w-full rounded-lg">
         <div className="container mx-auto flex justify-between items-center">
-          <h1 className="text-white text-2xl font-bold">FakeStore</h1>
+          <h1 className="text-white text-2xl font-bold">JeweleryStore</h1>
           <button
             className="flex select-none border-none items-center gap-3 rounded-lg bg-gradient-to-tr from-cyan-500 to-pink-400 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
             onClick={toggleCart}
@@ -92,7 +92,7 @@ const FakeStore = () => {
           />
         </div>
       )}
-      <div className="grid gap-5 grid-cols-4 grid-rows-5">
+      <div className="grid gap-5 grid-cols-2">
         {myProducts.map((product, index) => (
           <div
             key={index}
