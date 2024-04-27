@@ -12,14 +12,16 @@ const CartPage = ({ cartItems, removeItem, updateQuantity }) => {
 
   return (
     <>
-      <div className="h-24 ">
-        <h2 className="font-bold text-2xl text-black mt-2">Your Cart</h2>
+      <div className="h-24">
+        <div className="flex justify-center">
+          <h2 className="font-bold text-2xl text-black mt-2">Your Cart</h2>
+        </div>
         <InCartItems
           cartItems={cartItems}
           removeItem={removeItem}
           updateQuantity={updateQuantity}
         />
-        <div>
+        <div className="flex flex-col items-center justify-center">
           <p className="font-semibold text-black text-xl mt-4">
             Total Price: {totalPrice}$
           </p>

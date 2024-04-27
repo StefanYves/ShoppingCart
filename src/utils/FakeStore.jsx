@@ -62,7 +62,7 @@ const FakeStore = () => {
 
   return (
     <div className="w-">
-      <nav className="bg-cyan-500 p-4 w-full rounded-lg">
+      <nav className="bg-cyan-500 p-4 w-full ">
         <div className="container mx-auto flex justify-between items-center">
           <h1 className="text-white text-2xl font-bold">JeweleryStore</h1>
           <button
@@ -92,11 +92,11 @@ const FakeStore = () => {
           />
         </div>
       )}
-      <div className="grid gap-5 grid-cols-2">
+      <div className="grid gap-5 grid-cols-2 m-5 ">
         {myProducts.map((product, index) => (
           <div
             key={index}
-            className=" w-auto mt-10 flex items-center justify-center border"
+            className=" w-auto flex items-center justify-center border border-cyan-600 hover:bg-gray-200 transition duration-300"
           >
             <ProductCard
               key={index}
